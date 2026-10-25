@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#193d32" />
+    <meta name="description" content="A considered guide to Wayanad's Jain temples: living shrines, medieval basadis, and a route through the Western Ghats." />
+    <title>Jain Pilgrimage | Wayanad, Kerala</title>
+    <style>
+:root {
+  color-scheme: light;
+  --forest: #193d32;
+  --forest-deep: #102b24;
+  --leaf: #b4c982;
+  --lime: #d9e7a7;
+  --paper: #f4f5ef;
+  --white: #fffefa;
+  --ink: #1d2924;
+  --muted: #65716a;
+  --line: #d8ded6;
+  --rust: #bb6846;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+img { display: block; width: 100%; }
+::selection { background: var(--lime); color: var(--forest-deep); }
+
+.site-header { position: absolute; z-index: 5; top: 0; left: 0; width: 100%; height: 82px; padding: 0 7.2%; display: flex; align-items: center; justify-content: space-between; color: var(--white); border-bottom: 1px solid rgb(255 255 255 / 22%); }
+.brand { display: inline-flex; align-items: center; gap: 11px; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; white-space: nowrap; }
+.brand-mark { display: grid; width: 31px; height: 31px; place-items: center; border: 1px solid var(--leaf); border-radius: 50%; color: var(--lime); font-family: var(--serif); font-size: 17px; font-weight: 500; }
+.brand-light { font-weight: 400; opacity: .75; }
+.site-nav { display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); font-size: 12px; }
+.site-nav a { transition: color .2s ease; }
+.site-nav a:hover { color: var(--lime); }
+.site-nav .nav-cta { border: 1px solid rgb(255 255 255 / 55%); padding: 9px 14px; }
+.nav-cta span { margin-left: 7px; color: var(--lime); }
+.menu-toggle { display: none; }
+
+.hero { position: relative; display: flex; min-height: 680px; height: min(820px, 94svh); align-items: center; overflow: hidden; color: var(--white); background: var(--forest-deep); }
+.hero-image, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-image { object-fit: cover; object-position: center 45%; animation: hero-reveal 1.2s ease-out both; }
+.hero-shade { background: linear-gradient(90deg, rgb(12 35 29 / 80%) 0%, rgb(14 37 31 / 56%) 44%, rgb(17 40 34 / 12%) 100%), linear-gradient(0deg, rgb(8 25 21 / 44%) 0%, transparent 34%); }
+.hero-copy { position: relative; z-index: 1; width: min(700px, 78%); margin: 50px 0 0 12%; animation: copy-rise .8s .1s ease-out both; }
+.eyebrow, .section-kicker { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--rust); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.hero .eyebrow { color: var(--lime); }
+.eyebrow-line { width: 28px; height: 1px; background: var(--lime); }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: 0; line-height: 1.08; }
+h1 { max-width: 740px; margin: 24px 0 21px; font-size: clamp(58px, 7.1vw, 100px); }
+h1 em, h2 em { color: var(--leaf); font-weight: 500; }
+.hero-intro { max-width: 430px; margin-bottom: 29px; color: rgb(255 255 255 / 82%); font-size: 15px; }
+.button { display: inline-flex; min-height: 48px; align-items: center; justify-content: space-between; gap: 32px; padding: 0 17px; font-size: 12px; font-weight: 600; transition: background .2s ease, transform .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-light { background: var(--lime); color: var(--forest-deep); }
+.button-light:hover { background: var(--white); }
+.button span { font-size: 16px; }
+.hero-caption { position: absolute; right: 7.2%; bottom: 32px; left: 7.2%; display: flex; justify-content: space-between; color: rgb(255 255 255 / 74%); font-size: 9px; letter-spacing: 1.2px; }
+.hero-index { position: absolute; right: 7.2%; top: 50%; display: flex; align-items: center; gap: 12px; color: rgb(255 255 255 / 75%); font-size: 10px; transform: rotate(90deg) translateX(50%); transform-origin: right center; }
+.hero-index i { width: 44px; height: 1px; background: var(--lime); }
+
+.intro-band { position: relative; display: grid; grid-template-columns: .7fr 2.1fr 1.2fr; gap: 45px; align-items: start; padding: 92px 12% 87px; background: var(--forest); color: var(--white); }
+.intro-label { display: flex; align-items: center; gap: 14px; padding-top: 8px; white-space: nowrap; writing-mode: vertical-rl; }
+.intro-label .section-kicker { color: var(--lime); }
+.vertical-rule { width: 1px; height: 38px; background: rgb(255 255 255 / 35%); }
+.muted { color: rgb(255 255 255 / 51%); font-size: 9px; letter-spacing: 1px; }
+.intro-content { display: grid; grid-template-columns: 1.15fr .85fr; gap: 46px; align-items: end; }
+h2 { margin-bottom: 0; font-size: clamp(36px, 4.1vw, 57px); }
+.intro-content h2 { color: var(--white); }
+.intro-content h2 em { color: var(--lime); }
+.intro-detail p { margin-bottom: 18px; color: rgb(255 255 255 / 70%); font-size: 13px; }
+.text-link { display: inline-flex; align-items: center; gap: 13px; padding-bottom: 4px; border-bottom: 1px solid var(--rust); color: var(--white); font-size: 11px; font-weight: 600; }
+.text-link span { color: var(--lime); font-size: 15px; }
+.intro-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-self: end; padding-top: 21px; border-top: 1px solid rgb(255 255 255 / 26%); }
+.intro-stats div { display: flex; flex-direction: column; gap: 4px; }
+.intro-stats strong { color: var(--lime); font-family: var(--serif); font-size: 28px; font-weight: 500; line-height: 1; }
+.intro-stats strong small { font-size: 14px; }
+.intro-stats span { color: rgb(255 255 255 / 60%); font-size: 9px; }
+
+.places-section { padding: 103px 8% 97px; }
+.section-heading, .route-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
+.section-heading h2, .route-heading h2, .sources-heading h2 { margin-top: 14px; color: var(--forest); }
+.section-heading h2 em, .route-heading h2 em, .sources-heading h2 em { color: var(--rust); }
+.section-aside { max-width: 310px; margin-bottom: 5px; color: var(--muted); font-size: 12px; }
+.place-tools { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 46px 0 19px; padding-bottom: 13px; border-bottom: 1px solid var(--line); }
+.filter-tabs { display: flex; align-items: center; gap: 8px; }
+.filter-button { min-height: 35px; padding: 0 13px; border: 1px solid transparent; background: transparent; color: var(--muted); cursor: pointer; font-size: 11px; transition: border-color .2s, background .2s, color .2s; }
+.filter-button:hover, .filter-button.active { border-color: var(--forest); color: var(--forest); }
+.filter-button.active { background: var(--forest); color: var(--white); }
+.filter-button span { margin-left: 9px; color: var(--lime); }
+.results-count { color: var(--muted); font-size: 10px; }
+.place-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 21px; }
+.place-card { min-width: 0; background: var(--white); transition: transform .25s ease, opacity .2s ease; }
+.place-card:hover { transform: translateY(-4px); }
+.place-card[hidden] { display: none; }
+.place-photo { position: relative; height: 220px; overflow: hidden; background: #344b3e; }
+.place-featured .place-photo { height: 265px; }
+.place-photo::after { position: absolute; inset: 45% 0 0; background: linear-gradient(0deg, rgb(11 27 22 / 48%), transparent); content: ""; }
+.place-photo img { height: 100%; object-fit: cover; transition: transform .6s ease; }
+.place-card:hover .place-photo img { transform: scale(1.035); }
+.photo-bathery img { object-position: center 45%; }
+.photo-puliyarmala img { object-position: center; }
+.photo-koottamunda img { object-position: center; }
+.photo-number, .photo-tag { position: absolute; z-index: 1; bottom: 14px; color: var(--white); font-size: 9px; letter-spacing: 1.1px; }
+.photo-number { left: 16px; }
+.photo-tag { right: 14px; padding: 4px 7px; border: 1px solid rgb(255 255 255 / 62%); }
+.place-info { padding: 21px 21px 17px; }
+.place-meta { display: flex; justify-content: space-between; gap: 8px; color: var(--rust); font-size: 8px; font-weight: 700; letter-spacing: .8px; }
+.place-meta span:last-child { text-align: right; }
+.place-info h3 { margin: 13px 0 10px; color: var(--forest); font-family: var(--serif); font-size: 23px; font-weight: 600; line-height: 1.2; }
+.place-info > p { min-height: 95px; margin-bottom: 19px; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.place-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 13px; border-top: 1px solid var(--line); }
+.visit-note { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 9px; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--rust); }
+.place-card[data-kind="living"] .status-dot { background: #76894b; }
+.arrow-link { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid var(--line); color: var(--forest); font-size: 14px; transition: background .2s, color .2s; }
+.arrow-link:hover { background: var(--forest); color: var(--white); }
+.places-footnote { max-width: 800px; margin: 23px 0 0; color: var(--muted); font-size: 10px; }
+.places-footnote span { color: var(--rust); }
+.more-places { margin-top: 53px; padding-top: 25px; border-top: 1px solid var(--line); }
+.more-places-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 19px; }
+.more-places-heading h3 { margin: 9px 0 0; color: var(--forest); font-family: var(--serif); font-size: 28px; font-weight: 600; }
+.more-places-heading > p { max-width: 380px; margin: 0 0 3px; color: var(--muted); font-size: 10px; }
+.more-place-list { border-top: 1px solid var(--line); }
+.more-place-list > a { display: grid; grid-template-columns: 145px minmax(190px, .85fr) 1.15fr 20px; gap: 15px; align-items: center; min-height: 52px; border-bottom: 1px solid var(--line); transition: padding .2s ease, background .2s ease; }
+.more-place-list > a:hover { padding: 0 8px; background: rgb(255 254 250 / 65%); }
+.more-place-kind { color: var(--rust); font-size: 8px; font-weight: 700; letter-spacing: .7px; }
+.more-place-name { color: var(--forest); font-family: var(--serif); font-size: 14px; font-weight: 600; line-height: 1.3; }
+.more-place-note { color: var(--muted); font-size: 9px; }
+.directory-caveat { margin: 13px 0 0; color: var(--muted); font-size: 9px; }
+
+.heritage-note { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 480px; background: #e5e9df; }
+.heritage-image { position: relative; min-height: 420px; overflow: hidden; background: var(--forest); }
+.heritage-image img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
+.image-credit { position: absolute; bottom: 16px; left: 20px; color: white; font-size: 9px; letter-spacing: 1px; text-shadow: 0 1px 5px #000; }
+.heritage-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 60px 13% 60px 11%; }
+.heritage-copy h2 { margin: 16px 0 22px; color: var(--forest); }
+.heritage-copy h2 em { color: var(--rust); }
+.heritage-copy > p:not(.section-kicker) { margin-bottom: 16px; color: #526058; font-size: 12px; }
+.heritage-copy .heritage-small { font-size: 10px !important; }
+.heritage-copy .text-link { margin-top: 6px; border-color: var(--rust); color: var(--forest); }
+
+.route-section { padding: 102px 9% 105px; }
+.route-heading { margin-bottom: 42px; }
+.route-heading > p { max-width: 300px; margin-bottom: 4px; color: var(--muted); font-size: 11px; }
+.route-layout { display: grid; grid-template-columns: 1.3fr .7fr; gap: 8%; align-items: start; }
+.route-list { border-top: 1px solid var(--line); }
+.route-stop { position: relative; display: grid; grid-template-columns: 36px 17px 1fr auto; gap: 12px; min-height: 153px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+.stop-index { color: var(--rust); font-family: var(--serif); font-size: 16px; }
+.stop-mark { position: relative; width: 11px; height: 11px; margin-top: 6px; border: 1px solid var(--rust); border-radius: 50%; }
+.route-stop:not(:last-child) .stop-mark::after { position: absolute; top: 11px; left: 4px; height: 108px; border-left: 1px dashed #aeb9ad; content: ""; }
+.stop-time { margin-bottom: 7px; color: var(--rust); font-size: 8px; font-weight: 700; letter-spacing: 1px; }
+.route-stop h3 { margin: 0 0 6px; color: var(--forest); font-family: var(--serif); font-size: 20px; font-weight: 600; }
+.route-stop div > p:last-child { max-width: 460px; margin-bottom: 0; color: var(--muted); font-size: 10px; }
+.stop-duration { padding-top: 3px; color: var(--muted); font-size: 8px; letter-spacing: .7px; white-space: nowrap; }
+.route-card { padding: 18px; background: var(--white); }
+.route-card-top { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+.route-icon { display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--rust); font-size: 18px; }
+.route-map { position: relative; height: 218px; margin: 13px 0 15px; overflow: hidden; background: #e9eee4; }
+.map-grid { position: absolute; inset: 0; opacity: .5; background-image: linear-gradient(30deg, transparent 48%, #c7d3c2 49%, #c7d3c2 50%, transparent 51%), linear-gradient(150deg, transparent 48%, #d4dccf 49%, #d4dccf 50%, transparent 51%); background-size: 45px 55px; }
+.route-map svg { position: absolute; z-index: 1; width: 100%; height: 100%; overflow: visible; }
+.map-path { fill: none; stroke: var(--rust); stroke-dasharray: 4 5; stroke-width: 2; }
+.map-point { fill: var(--forest); stroke: var(--lime); stroke-width: 3; }
+.route-map text { fill: var(--forest); font-family: var(--sans); font-size: 8px; font-weight: 700; letter-spacing: .7px; }
+.map-contour { position: absolute; width: 120px; height: 58px; border: 1px solid rgb(100 126 92 / 25%); border-radius: 50%; transform: rotate(-24deg); }
+.contour-one { top: 23px; right: -18px; }
+.contour-two { right: 0; bottom: 8px; width: 145px; }
+.route-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px; }
+.route-summary div { display: flex; flex-direction: column; }
+.route-summary strong { color: var(--forest); font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.route-summary span { color: var(--muted); font-size: 9px; }
+.button-dark { width: 100%; background: var(--forest); color: var(--white); }
+.button-dark:hover { background: var(--forest-deep); }
+.route-disclaimer { margin: 10px 0 0; color: var(--muted); font-size: 8px; }
+
+.visit-band { display: grid; grid-template-columns: .85fr 1.15fr; gap: 8%; padding: 77px 12%; background: var(--forest); color: var(--white); }
+.visit-title .section-kicker { color: var(--lime); }
+.visit-title h2 { margin-top: 16px; font-size: clamp(35px, 4vw, 50px); }
+.visit-title h2 em { color: var(--lime); }
+.visit-tips { display: grid; grid-template-columns: 1fr 1fr; gap: 21px 30px; }
+.visit-tips div { display: grid; grid-template-columns: 25px 1fr; gap: 9px; align-items: start; padding-top: 13px; border-top: 1px solid rgb(255 255 255 / 26%); }
+.visit-tips span { color: var(--lime); font-family: var(--serif); font-size: 12px; }
+.visit-tips p { margin: 0; color: rgb(255 255 255 / 75%); font-size: 10px; }
+
+.sources-section { display: grid; grid-template-columns: .72fr 1.28fr; gap: 8%; padding: 89px 12% 78px; }
+.sources-heading h2 { font-size: clamp(32px, 3.5vw, 46px); }
+.source-list { border-top: 1px solid var(--line); }
+.source-list a { display: grid; grid-template-columns: 145px 1fr 20px; gap: 14px; align-items: center; min-height: 55px; border-bottom: 1px solid var(--line); transition: padding .2s ease; }
+.source-list a:hover { padding: 0 7px; }
+.source-type { color: var(--rust); font-size: 8px; font-weight: 700; letter-spacing: .8px; }
+.source-title { color: var(--forest); font-family: var(--serif); font-size: 15px; }
+.source-arrow { justify-self: end; color: var(--rust); font-size: 14px; }
+.source-note { grid-column: 2; margin: -10px 0 0; color: var(--muted); font-size: 9px; }
+.site-footer { display: flex; min-height: 77px; align-items: center; justify-content: space-between; gap: 20px; padding: 15px 7.2%; background: var(--forest-deep); color: rgb(255 255 255 / 73%); font-size: 9px; }
+.footer-brand { color: var(--white); }
+.footer-brand .brand-mark { width: 26px; height: 26px; font-size: 14px; }
+.back-top { color: var(--lime); font-size: 8px; letter-spacing: 1px; }
+
+.section-tabs { position: sticky; z-index: 4; top: 0; display: flex; justify-content: center; gap: clamp(20px, 5vw, 70px); padding: 20px 5%; background: var(--white); border-bottom: 1px solid var(--line); }
+.section-tabs a { color: var(--muted); font-size: 11px; letter-spacing: .3px; text-transform: uppercase; }
+.section-tabs a:hover { color: var(--forest); }
+.video-section, .map-section, .gallery-section { padding: 86px 9%; }
+.video-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 8%; align-items: center; background: #e7ebe2; }
+.video-copy h2, .map-heading h2, .gallery-heading h2 { margin: 12px 0 17px; color: var(--forest); }
+.video-copy h2 em, .map-heading h2 em, .gallery-heading h2 em { color: var(--rust); }
+.video-copy > p:last-of-type, .map-heading > p:last-child, .gallery-heading > p:last-child { color: var(--muted); font-size: 12px; }
+.video-frame { position: relative; display: grid; min-height: 320px; place-items: center; overflow: hidden; background: linear-gradient(0deg, rgb(12 35 29 / 75%), rgb(12 35 29 / 12%)), url("https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1400&q=85") center 48% / cover; }
+.video-frame p { position: absolute; right: 20px; bottom: 12px; left: 20px; margin: 0; color: white; font-size: 10px; }
+.video-play { display: grid; width: 62px; height: 62px; place-items: center; border: 1px solid white; border-radius: 50%; color: white; font-size: 21px; transition: transform .2s, background .2s; }
+.video-play:hover { transform: scale(1.08); background: rgb(255 255 255 / 18%); }
+.map-section { background: var(--paper); }
+.map-heading, .gallery-heading { max-width: 700px; margin-bottom: 34px; }
+.map-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
+.map-embed { width: 100%; min-height: 430px; border: 0; background: #e5e9df; }
+.map-destinations { padding: 22px; background: var(--white); }
+.map-destinations h3 { margin: 0 0 14px; color: var(--forest); font-family: var(--serif); font-size: 22px; }
+.map-destinations a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); color: var(--forest); font-size: 11px; }
+.map-destinations a span:last-child { color: var(--rust); }
+.map-note { margin: 14px 0 0; color: var(--muted); font-size: 9px; }
+.gallery-section { background: #e7ebe2; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.gallery-item { position: relative; min-height: 220px; padding: 0; overflow: hidden; border: 0; background: var(--forest); cursor: zoom-in; text-align: left; }
+.gallery-item img { width: 100%; height: 100%; min-height: 220px; object-fit: cover; transition: transform .35s; }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item span { position: absolute; right: 0; bottom: 0; left: 0; padding: 26px 13px 12px; background: linear-gradient(transparent, rgb(10 28 23 / 75%)); color: white; font-size: 10px; }
+.gallery-note { margin: 15px 0 0; color: var(--muted); font-size: 9px; }
+.gallery-dialog { width: min(900px, calc(100% - 32px)); max-height: 90vh; padding: 12px; border: 0; background: var(--white); }
+.gallery-dialog::backdrop { background: rgb(10 24 20 / 82%); }
+.gallery-dialog img { max-height: 76vh; object-fit: contain; }
+.gallery-dialog p { margin: 10px 42px 0 0; color: var(--forest); font-size: 12px; }
+.gallery-close { position: absolute; top: 17px; right: 17px; width: 34px; height: 34px; border: 0; background: var(--forest); color: white; cursor: pointer; font-size: 19px; }
+
+:focus-visible { outline: 2px solid var(--rust); outline-offset: 3px; }
+@keyframes hero-reveal { from { transform: scale(1.04); opacity: .6; } to { transform: scale(1); opacity: 1; } }
+@keyframes copy-rise { from { transform: translateY(18px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+@media (min-width: 1500px) {
+  .hero-copy { margin-left: max(12%, calc((100vw - 1180px) / 2)); }
+  .intro-band, .places-section, .route-section, .visit-band, .sources-section { padding-right: max(9%, calc((100vw - 1250px) / 2)); padding-left: max(9%, calc((100vw - 1250px) / 2)); }
+}
+
+@media (max-width: 1050px) {
+  .site-header { padding: 0 5%; }
+  .hero-copy { margin-left: 9%; }
+  .intro-band { grid-template-columns: 35px 1fr; gap: 28px; padding: 75px 8%; }
+  .intro-stats { grid-column: 2; }
+  .intro-content { grid-template-columns: 1fr .9fr; }
+  .places-section { padding-right: 5%; padding-left: 5%; }
+  .place-grid { gap: 14px; }
+  .place-photo, .place-featured .place-photo { height: 210px; }
+  .place-info { padding: 17px 15px 14px; }
+  .place-meta { flex-wrap: wrap; }
+  .place-info h3 { font-size: 20px; }
+  .place-info > p { min-height: 115px; }
+  .route-section { padding-right: 6%; padding-left: 6%; }
+  .visit-band, .sources-section { padding-right: 8%; padding-left: 8%; }
+  .video-section, .map-section, .gallery-section { padding-right: 7%; padding-left: 7%; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  html { scroll-padding-top: 68px; }
+  .site-header { position: absolute; height: 68px; padding: 0 20px; }
+  .menu-toggle { display: flex; width: 38px; height: 38px; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border: 1px solid rgb(255 255 255 / 55%); background: transparent; color: white; }
+  .menu-toggle span { width: 15px; height: 1px; background: white; }
+  .site-nav { position: absolute; top: 67px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 7px 20px 18px; background: var(--forest-deep); }
+  .site-nav.open { display: flex; }
+  .site-nav a { padding: 12px 0; border-bottom: 1px solid rgb(255 255 255 / 17%); }
+  .site-nav .nav-cta { margin-top: 10px; padding: 10px 12px; border: 1px solid rgb(255 255 255 / 55%); }
+  .section-tabs { position: sticky; justify-content: flex-start; gap: 23px; overflow-x: auto; padding: 15px 20px; white-space: nowrap; }
+  .section-tabs a { font-size: 10px; }
+  .hero { min-height: 640px; height: 88svh; max-height: 820px; }
+  .hero-image { object-position: 57% center; }
+  .hero-shade { background: linear-gradient(90deg, rgb(12 35 29 / 76%), rgb(14 37 31 / 35%)), linear-gradient(0deg, rgb(8 25 21 / 45%), transparent 40%); }
+  .hero-copy { width: calc(100% - 46px); margin: 32px 23px 0; }
+  h1 { margin-top: 21px; font-size: clamp(52px, 13vw, 76px); }
+  .hero-intro { max-width: 360px; font-size: 13px; }
+  .hero-caption { right: 22px; left: 22px; bottom: 22px; font-size: 8px; }
+  .hero-index { right: 22px; }
+  .intro-band { grid-template-columns: 1fr; gap: 27px; padding: 58px 24px 53px; }
+  .intro-label { flex-direction: row; gap: 10px; writing-mode: horizontal-tb; }
+  .vertical-rule { width: 25px; height: 1px; }
+  .intro-content { grid-template-columns: 1fr; gap: 19px; }
+  .intro-content h2 { font-size: 43px; }
+  .intro-detail p { max-width: 480px; font-size: 12px; }
+  .intro-stats { grid-column: 1; gap: 9px; }
+  .intro-stats strong { font-size: 25px; }
+  .intro-stats span { font-size: 8px; }
+  .places-section { padding: 62px 20px 59px; }
+  .section-heading, .route-heading { display: block; }
+  .section-heading h2, .route-heading h2, .sources-heading h2 { font-size: 39px; }
+  .section-aside { max-width: 440px; margin: 18px 0 0; }
+  .place-tools { align-items: flex-start; flex-direction: column; gap: 9px; margin: 29px 0 16px; }
+  .filter-tabs { width: 100%; gap: 2px; overflow-x: auto; }
+  .filter-button { flex: 0 0 auto; padding: 0 10px; font-size: 10px; }
+  .results-count { align-self: flex-end; }
+  .place-grid { grid-template-columns: 1fr; gap: 18px; }
+  .place-photo, .place-featured .place-photo { height: 230px; }
+  .place-info { padding: 20px; }
+  .place-info > p { min-height: 0; }
+  .place-info h3 { font-size: 24px; }
+  .places-footnote { font-size: 9px; }
+  .more-places { margin-top: 38px; }
+  .more-places-heading { display: block; margin-bottom: 15px; }
+  .more-places-heading h3 { font-size: 25px; }
+  .more-places-heading > p { margin-top: 9px; }
+  .more-place-list > a { grid-template-columns: 1fr 18px; gap: 3px 10px; padding: 10px 0; }
+  .more-place-kind { grid-column: 1; }
+  .more-place-name { grid-column: 1; }
+  .more-place-note { grid-column: 1; }
+  .more-place-list .source-arrow { grid-column: 2; grid-row: 1 / span 3; }
+  .heritage-note { grid-template-columns: 1fr; }
+  .heritage-image, .heritage-image img { min-height: 300px; height: 300px; }
+  .heritage-copy { padding: 43px 25px 48px; }
+  .heritage-copy h2 { font-size: 43px; }
+  .route-section { padding: 62px 21px 65px; }
+  .route-heading > p { margin-top: 15px; }
+  .route-layout { grid-template-columns: 1fr; gap: 32px; }
+  .route-stop { grid-template-columns: 26px 13px 1fr; gap: 8px; min-height: 0; padding: 20px 0; }
+  .stop-duration { grid-column: 3; padding-top: 8px; }
+  .route-stop:not(:last-child) .stop-mark::after { height: calc(100% + 23px); }
+  .route-card { padding: 16px; }
+  .route-map { height: 210px; }
+  .visit-band { grid-template-columns: 1fr; gap: 30px; padding: 51px 24px; }
+  .visit-title h2 { font-size: 41px; }
+  .visit-tips { gap: 17px 14px; }
+  .visit-tips div { grid-template-columns: 19px 1fr; gap: 5px; }
+  .visit-tips p { font-size: 9px; }
+  .sources-section { grid-template-columns: 1fr; gap: 25px; padding: 59px 23px 52px; }
+  .sources-heading h2 { margin-top: 12px; }
+  .source-list a { grid-template-columns: 93px 1fr 15px; gap: 9px; min-height: 63px; }
+  .source-type { font-size: 7px; }
+  .source-title { font-size: 13px; line-height: 1.3; }
+  .source-note { grid-column: 1; margin: -8px 0 0; }
+  .site-footer { min-height: 95px; flex-wrap: wrap; gap: 8px 15px; padding: 17px 21px; }
+  .site-footer > span { order: 3; width: 100%; }
+  .video-section, .map-section, .gallery-section { padding: 58px 20px; }
+  .video-section, .map-layout { grid-template-columns: 1fr; gap: 24px; }
+  .video-frame { min-height: 230px; }
+  .map-embed { min-height: 320px; }
+  .gallery-grid { gap: 9px; }
+  .gallery-item, .gallery-item img { min-height: 155px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+    </style>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jain Pilgrimage home">
+        <span class="brand-mark" aria-hidden="true">ज</span>
+        <span>JAIN <span class="brand-light">PILGRIMAGE</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#overview">The circuit</a>
+        <a href="#places">Sacred places</a>
+        <a href="#journey">Plan your visit</a>
+        <a class="nav-cta" href="#sources">Field notes <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2200&q=85" alt="Sunlight falling across a dense green forest in the Western Ghats" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SOUTH INDIA · KERALA</p>
+          <h1 id="hero-title">Where stone<br />remembers <em>stillness.</em></h1>
+          <p class="hero-intro">A pilgrimage through Wayanad’s Jain heritage — from a 13th-century granite basadi to quiet shrines held in the hills.</p>
+          <a class="button button-light" href="#overview">Explore the circuit <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-caption"><span>WAYANAD DISTRICT</span><span>11° 41′ N &nbsp; 76° 08′ E</span></div>
+        <div class="hero-index"><span>01</span><i></i><span>04</span></div>
+      </section>
+
+      <nav class="section-tabs" aria-label="Explore the guide">
+        <a href="#video">Video</a>
+        <a href="#overview">Overview</a>
+        <a href="#places">Locations</a>
+        <a href="#maps">Maps</a>
+        <a href="#gallery">Photo gallery</a>
+      </nav>
+
+      <section class="video-section" id="video" aria-labelledby="video-title">
+        <div class="video-copy"><p class="section-kicker">SEE THE LANDSCAPE</p><h2 id="video-title">Wayanad, in <em>motion.</em></h2><p>Explore travel films and local footage of Wayanad before planning your journey. We have not embedded an unverified temple video; this link opens current search results so you can choose a relevant clip.</p><a class="button button-dark" href="https://www.youtube.com/results?search_query=Wayanad+Jain+temples+Kerala" target="_blank" rel="noreferrer">Browse Wayanad videos <span aria-hidden="true">↗</span></a></div>
+        <a class="video-frame" href="https://www.youtube.com/results?search_query=Wayanad+Jain+temples+Kerala" target="_blank" rel="noreferrer" aria-label="Search YouTube for Wayanad Jain temple videos"><span class="video-play" aria-hidden="true">▶</span><p>WAYANAD · WESTERN GHATS · VIDEO SEARCH</p></a>
+      </section>
+
+      <section class="intro-band" id="overview">
+        <div class="intro-label"><span class="section-kicker">A LIVING HERITAGE</span><span class="vertical-rule"></span><span class="muted">KERALA · INDIA</span></div>
+        <div class="intro-content">
+          <h2>Before the forests,<br />there was a <em>footpath.</em></h2>
+          <div class="intro-detail">
+            <p>Jain communities have shaped Wayanad’s story for centuries. Here, granite shrines and working temples sit among coffee hills, old trade routes and the green folds of the Western Ghats.</p>
+            <a class="text-link" href="https://www.keralatourism.org/wayanad/pilgrim-tourism.php" target="_blank" rel="noreferrer">Discover Wayanad pilgrim tourism <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="intro-stats" aria-label="Circuit overview">
+          <div><strong>03</strong><span>featured shrines</span></div>
+          <div><strong>09–13<small>c.</small></strong><span>medieval heritage</span></div>
+          <div><strong>01</strong><span>unhurried day</span></div>
+        </div>
+      </section>
+
+      <section class="places-section" id="places">
+        <div class="section-heading">
+          <div><p class="section-kicker">THE WAYANAD CIRCUIT</p><h2>Three places. <em>Many lifetimes.</em></h2></div>
+          <p class="section-aside">Begin in the south, where Wayanad’s granite tells its oldest stories. Continue north through living shrines and mountain air.</p>
+        </div>
+        <div class="place-tools">
+          <div class="filter-tabs" role="group" aria-label="Filter sacred places">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All places <span>03</span></button>
+            <button class="filter-button" type="button" data-filter="heritage" aria-pressed="false">Historic basadis</button>
+            <button class="filter-button" type="button" data-filter="living" aria-pressed="false">Living temples</button>
+          </div>
+          <span class="results-count" aria-live="polite">Showing 3 places</span>
+        </div>
+        <div class="place-grid">
+          <article class="place-card place-featured" data-kind="heritage">
+            <div class="place-photo photo-bathery"><img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1100&q=85" alt="Carved stone architecture at an old Indian temple" loading="lazy" /><span class="photo-number">01 / 03</span><span class="photo-tag">HISTORIC BASADI</span></div>
+            <div class="place-info"><div class="place-meta"><span>SULTHAN BATHERY</span><span>13TH CENTURY</span></div><h3>Bathery Jain Temple</h3><p>A granite shrine of carved pillars and quiet proportion. Once a place of worship, later used as an ammunition store under Tipu Sultan — the name “Bathery” is said to echo that chapter.</p><div class="place-bottom"><span class="visit-note"><i class="status-dot"></i> Heritage monument</span><a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=Jain+Temple+Sulthan+Bathery+Wayanad" target="_blank" rel="noreferrer" aria-label="Open directions to Bathery Jain Temple">↗</a></div></div>
+          </article>
+          <article class="place-card" data-kind="living">
+            <div class="place-photo photo-puliyarmala"><img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=85" alt="An old stone shrine among lush greenery" loading="lazy" /><span class="photo-number">02 / 03</span><span class="photo-tag">LIVING SHRINE</span></div>
+            <div class="place-info"><div class="place-meta"><span>PULIYARMALA · KALPETTA</span><span>5 KM FROM KALPETTA</span></div><h3>Ananthanatha Swami Temple</h3><p>Dedicated to the 3rd Tirthankara, this hillock temple is framed by coffee plantations. Kerala Tourism notes its Dravidian details, carved gateway and stone Jain icons.</p><div class="place-bottom"><span class="visit-note"><i class="status-dot"></i> Active place of worship</span><a class="arrow-link" href="https://share.google/IvjqHIuq3atqkk13a" target="_blank" rel="noreferrer" aria-label="Open the shared listing for Ananthanatha Swami Temple">↗</a></div></div>
+          </article>
+          <article class="place-card" data-kind="living">
+            <div class="place-photo photo-koottamunda"><img src="https://www.keralatourism.org/images/microsites/wayanad/waynadu-1024x768.jpg" alt="Green mountain landscape in Wayanad near the Koottamunda temple" loading="lazy" /><span class="photo-number">03 / 03</span><span class="photo-tag">MIRROR TEMPLE</span></div>
+            <div class="place-info"><div class="place-meta"><span>KOOTTAMUNDA · VELLARIMALA</span><span>ABOUT 20 KM FROM KALPETTA</span></div><h3>Glass Temple</h3><p>A distinctive shrine dedicated to Parshwanatha Swami. Mirrors lining the inner walls multiply the reflections of the icons and create its luminous, jewel-like character.</p><div class="place-bottom"><span class="visit-note"><i class="status-dot"></i> Confirm access locally</span><a class="arrow-link" href="https://www.google.com/maps/search/?api=1&query=Glass+Temple+Koottamunda+Wayanad" target="_blank" rel="noreferrer" aria-label="Open directions to Glass Temple Koottamunda">↗</a></div></div>
+          </article>
+        </div>
+        <p class="places-footnote"><span aria-hidden="true">*</span> A focused visitor guide, not an exhaustive census. Wayanad also has historic basadis around Punchavayal and Puthangadi; their condition and access can vary. Please verify temple access before travelling.</p>
+        <div class="more-places">
+          <div class="more-places-heading"><div><p class="section-kicker">BEYOND THE MAIN CIRCUIT</p><h3>More places to know.</h3></div><p>Additional heritage remains and local Jain temple listings found in Wayanad. Details and access are less consistently published; confirm with local communities before visiting.</p></div>
+          <div class="more-place-list">
+            <a href="https://www.google.com/maps/search/?api=1&query=Janardhanagudi+Jain+Basadi+Punchavayal+Wayanad" target="_blank" rel="noreferrer"><span class="more-place-kind">HISTORIC BASADI</span><span class="more-place-name">Janardhanagudi · Punchavayal</span><span class="more-place-note">Ruined Jain basadi; about 1 km from Punchavayal junction</span><span class="source-arrow">↗</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Vishnugudi+Jain+Basadi+Puthangadi+Wayanad" target="_blank" rel="noreferrer"><span class="more-place-kind">HISTORIC BASADI</span><span class="more-place-name">Vishnugudi · Puthangadi</span><span class="more-place-note">Surviving sanctum; described as ASI-protected by Sahapedia</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/bLxopVBkXBlAwsRKa" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Varadoor Shri Ananthanatha Swami Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/jJB4cOKnhhMSHeQA8" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Anjukunnu Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Adhinath+Swami+Jain+Temple+Payyampally+Puthiyedam+Wayanad" target="_blank" rel="noreferrer"><span class="more-place-kind">LOCAL TEMPLE LISTING</span><span class="more-place-name">Shri Adhinath Swami Jain Temple · Payyampally</span><span class="more-place-note">Listed near Puthiyedam Road</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/6ib6XNhMSOumGH3kp" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Shanthinatha Swamy Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/BieAI7N38K2yXAI0d" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Shri Adinath Swamy Digambar Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/IMw4MYwldtFB51tcm" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Shri Adinatha Swami Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/lk3yCQB9AM1OPJVZz" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Shri Parwanatha Swami Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+            <a href="https://share.google/ptToZs0yXcFmhgQEz" target="_blank" rel="noreferrer"><span class="more-place-kind">USER-SHARED LISTING</span><span class="more-place-name">Chandranatha Swami Digambar Jain Temple</span><span class="more-place-note">Location and current access details: see linked listing</span><span class="source-arrow">↗</span></a>
+          </div>
+          <p class="directory-caveat">This is the broadest directory we could substantiate from public tourism, research and map listings, not an official district register. Names may vary between sources; some historic sites are ruins and some mapped places may have limited access.</p>
+        </div>
+      </section>
+
+      <section class="map-section" id="maps" aria-labelledby="maps-title">
+        <div class="map-heading"><p class="section-kicker">FIND YOUR WAY</p><h2 id="maps-title">Places across <em>Wayanad.</em></h2><p>Use the map to explore Jain temple and heritage-site listings. Search pins are approximate; open each destination in Maps and confirm the exact location before setting out.</p></div>
+        <div class="map-layout">
+          <iframe class="map-embed" title="Map search for Jain temples in Wayanad" src="https://www.google.com/maps?q=Jain+temples+Wayanad+Kerala&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <aside class="map-destinations"><h3>Open a destination</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jain+Temple+Sulthan+Bathery+Wayanad" target="_blank" rel="noreferrer"><span>Bathery Jain Temple · Sulthan Bathery</span><span>↗</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ananthanatha+Swami+Temple+Puliyarmala+Kalpetta" target="_blank" rel="noreferrer"><span>Ananthanatha Swami Temple · Puliyarmala</span><span>↗</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Glass+Temple+Koottamunda+Wayanad" target="_blank" rel="noreferrer"><span>Glass Temple · Koottamunda</span><span>↗</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jain+basadi+Punchavayal+Puthangadi+Wayanad" target="_blank" rel="noreferrer"><span>Basadi remains · Punchavayal / Puthangadi</span><span>↗</span></a>
+            <p class="map-note">Community-submitted temple listings are included in the Locations directory below. Their names and exact locations may differ between listings.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading"><p class="section-kicker">A VISUAL FIELD GUIDE</p><h2 id="gallery-title">Stone, forest & <em>mountain air.</em></h2><p>Tap an image to enlarge it.</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=85" data-caption="Forest landscape in the Western Ghats · representative image"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=700&q=80" alt="Dense green forest in the Western Ghats" loading="lazy" /><span>Forest landscape · representative</span></button>
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1600&q=85" data-caption="Carved stone architecture · representative image, not a verified temple photograph"><img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80" alt="Carved stone architecture at an Indian temple" loading="lazy" /><span>Carved stone · representative</span></button>
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1600&q=85" data-caption="Stone shrine in greenery · representative image, not a verified temple photograph"><img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=700&q=80" alt="Stone shrine among greenery" loading="lazy" /><span>Shrine in greenery · representative</span></button>
+          <button class="gallery-item" type="button" data-image="https://www.keralatourism.org/images/microsites/wayanad/waynadu-1024x768.jpg" data-caption="Landscape in Wayanad · image from Kerala Tourism"><img src="https://www.keralatourism.org/images/microsites/wayanad/waynadu-1024x768.jpg" alt="Green mountain landscape in Wayanad" loading="lazy" /><span>Wayanad landscape</span></button>
+        </div>
+        <p class="gallery-note">Images marked representative illustrate regional architecture and landscape; they are not confirmed photographs of the named temples.</p>
+      </section>
+
+      <section class="heritage-note">
+        <div class="heritage-image"><img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1400&q=85" alt="Stone carvings and pillars in an Indian temple" loading="lazy" /><span class="image-credit">ARCHITECTURAL DETAIL · REPRESENTATIVE IMAGE</span></div>
+        <div class="heritage-copy"><p class="section-kicker">A NOTE ON THE RUINS</p><h2>Some stories are<br />written in <em>stone.</em></h2><p>Near Punchavayal, the remains known in historical literature as Janardhanagudi and Vishnugudi are identified by researchers as Jain basadis. Their original idols are missing; the names and original purposes remain subjects of historical discussion.</p><p class="heritage-small">Vishnugudi is at Puthangadi, roughly 500 m from Punchavayal junction. Janardhanagudi lies about 1 km from the junction on the road to Neeruvaram. These are fragile historic remains, not active temples.</p><a class="text-link" href="https://www.sahapedia.org/jain-temples-wayanad-vishnugudi-and-janardhanagudi" target="_blank" rel="noreferrer">Read the archaeological account <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="route-section" id="journey">
+        <div class="route-heading"><div><p class="section-kicker">MAKE THE JOURNEY YOURS</p><h2>A day, at <em>your pace.</em></h2></div><p>Distances are approximate. Mountain roads move to their own rhythm; check conditions before setting out.</p></div>
+        <div class="route-layout">
+          <div class="route-list" aria-label="Suggested one-day route">
+            <article class="route-stop"><span class="stop-index">01</span><span class="stop-mark"></span><div><p class="stop-time">MORNING · SULTHAN BATHERY</p><h3>Bathery Jain Temple</h3><p>Start with the granite basadi while the day is still cool. Allow time to notice the carved pillars and the open verandah.</p></div><span class="stop-duration">45–60 MIN</span></article>
+            <article class="route-stop"><span class="stop-index">02</span><span class="stop-mark"></span><div><p class="stop-time">MIDDAY · PULIYARMALA</p><h3>Ananthanatha Swami Temple</h3><p>Continue toward Kalpetta for a quiet visit on the hillock. Please respect worshippers and ask before photographing.</p></div><span class="stop-duration">45 MIN</span></article>
+            <article class="route-stop"><span class="stop-index">03</span><span class="stop-mark"></span><div><p class="stop-time">AFTERNOON · KOOTTAMUNDA</p><h3>Glass Temple</h3><p>Finish with the mirrored shrine in the hills. Confirm opening and access with local contacts before you make the drive.</p></div><span class="stop-duration">30–45 MIN</span></article>
+          </div>
+          <aside class="route-card"><div class="route-card-top"><span>ROUTE SNAPSHOT</span><span class="route-icon" aria-hidden="true">⌖</span></div><div class="route-map" role="img" aria-label="Schematic route from Sulthan Bathery to Puliyarmala and Koottamunda"><div class="map-grid"></div><svg viewBox="0 0 360 260" aria-hidden="true"><path class="map-path" d="M76 60 C110 77 99 122 153 135 S220 172 268 206"/><circle class="map-point" cx="76" cy="60" r="8"/><circle class="map-point" cx="153" cy="135" r="8"/><circle class="map-point" cx="268" cy="206" r="8"/><text x="90" y="55">SULTHAN BATHERY</text><text x="166" y="130">PULIYARMALA</text><text x="155" y="232">KOOTTAMUNDA</text></svg><span class="map-contour contour-one"></span><span class="map-contour contour-two"></span></div><div class="route-summary"><div><strong>3 stops</strong><span>suggested circuit</span></div><div><strong>Full day</strong><span>with unhurried stops</span></div></div><a class="button button-dark" href="https://www.google.com/maps/dir/?api=1&origin=Jain+Temple+Sulthan+Bathery&destination=Glass+Temple+Koottamunda&waypoints=Ananthanatha+Swami+Temple+Puliyarmala" target="_blank" rel="noreferrer">Open route in Maps <span aria-hidden="true">↗</span></a><p class="route-disclaimer">Check live directions and road conditions before travel.</p></aside>
+        </div>
+      </section>
+
+      <section class="visit-band">
+        <div class="visit-title"><p class="section-kicker">TRAVEL WITH CARE</p><h2>Quiet places<br />deserve <em>quiet visitors.</em></h2></div>
+        <div class="visit-tips"><div><span>01</span><p>Check opening times locally. Rural temple hours and access can change.</p></div><div><span>02</span><p>Dress modestly, remove footwear where requested, and follow local guidance.</p></div><div><span>03</span><p>Ask before taking photographs, especially during worship or inside sanctums.</p></div><div><span>04</span><p>Do not touch or climb on fragile stonework at historic sites.</p></div></div>
+      </section>
+
+      <section class="sources-section" id="sources">
+        <div class="sources-heading"><p class="section-kicker">READ BEYOND THE GUIDE</p><h2>Field notes & <em>sources.</em></h2></div>
+        <div class="source-list">
+          <a href="https://www.keralatourism.org/wayanad/jain-temples-sultan-bathery.php" target="_blank" rel="noreferrer"><span class="source-type">OFFICIAL TOURISM</span><span class="source-title">Jain Temples in Sultan Bathery</span><span class="source-arrow">↗</span></a>
+          <a href="https://www.keralatourism.org/wayanad/ananthanatha-swami-temple.php" target="_blank" rel="noreferrer"><span class="source-type">OFFICIAL TOURISM</span><span class="source-title">Ananthanatha Swami Temple near Kalpetta</span><span class="source-arrow">↗</span></a>
+          <a href="https://www.keralatourism.org/wayanad/glass-temple-koottamunda.php" target="_blank" rel="noreferrer"><span class="source-type">OFFICIAL TOURISM</span><span class="source-title">Glass Temple of Koottamunda</span><span class="source-arrow">↗</span></a>
+          <a href="https://www.sahapedia.org/jain-temples-wayanad-vishnugudi-and-janardhanagudi" target="_blank" rel="noreferrer"><span class="source-type">ARCHAEOLOGICAL ESSAY</span><span class="source-title">Vishnugudi & Janardhanagudi, Sahapedia</span><span class="source-arrow">↗</span></a>
+        </div>
+        <p class="source-note">Temple descriptions and historical notes are summarized from the linked sources. Images are illustrative; verify current access and conditions with local authorities before visiting.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">ज</span><span>JAIN <span class="brand-light">PILGRIMAGE</span></span></a><span>Wayanad, Kerala · A journey in reverence</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+    <dialog class="gallery-dialog" aria-label="Expanded gallery image"><button class="gallery-close" type="button" aria-label="Close image">×</button><img alt="" /><p></p></dialog>
+    <script>
+const filterButtons = document.querySelectorAll(".filter-button");
+const placeCards = document.querySelectorAll(".place-card");
+const resultsCount = document.querySelector(".results-count");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    let visibleCount = 0;
+
+    filterButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle("active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    placeCards.forEach((card) => {
+      const isVisible = filter === "all" || card.dataset.kind === filter;
+      card.hidden = !isVisible;
+      visibleCount += Number(isVisible);
+    });
+
+    resultsCount.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? "place" : "places"}`;
+  });
+});
+
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+  siteNav.classList.toggle("open", !isOpen);
+});
+
+siteNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation");
+    siteNav.classList.remove("open");
+  });
+});
+
+const galleryDialog = document.querySelector(".gallery-dialog");
+const galleryImage = galleryDialog.querySelector("img");
+const galleryCaption = galleryDialog.querySelector("p");
+
+document.querySelectorAll(".gallery-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    galleryImage.src = item.dataset.image;
+    galleryImage.alt = item.querySelector("img").alt;
+    galleryCaption.textContent = item.dataset.caption;
+    galleryDialog.showModal();
+  });
+});
+
+galleryDialog.querySelector(".gallery-close").addEventListener("click", () => galleryDialog.close());
+galleryDialog.addEventListener("click", (event) => {
+  if (event.target === galleryDialog) galleryDialog.close();
+});
+    </script>
+  </body>
+</html>
